@@ -37,6 +37,7 @@
             // 
             this.winScreenText.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.winScreenText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.winScreenText.Enabled = false;
             this.winScreenText.Font = new System.Drawing.Font("Curlz MT", 140.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.winScreenText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.winScreenText.Location = new System.Drawing.Point(127, 150);

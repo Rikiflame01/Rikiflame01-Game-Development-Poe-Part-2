@@ -34,7 +34,7 @@ namespace GoblinSlayer
 
         private void diedExitButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

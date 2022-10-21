@@ -49,7 +49,6 @@
             // 
             // wonRestartButton
             // 
-            this.wonRestartButton.Cursor = System.Windows.Forms.Cursors.Help;
             this.wonRestartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wonRestartButton.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wonRestartButton.ForeColor = System.Drawing.Color.DodgerBlue;
@@ -64,6 +63,7 @@
             // wonExitButton
             // 
             this.wonExitButton.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.wonExitButton.Cursor = System.Windows.Forms.Cursors.Help;
             this.wonExitButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.wonExitButton.FlatAppearance.BorderSize = 0;
             this.wonExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
