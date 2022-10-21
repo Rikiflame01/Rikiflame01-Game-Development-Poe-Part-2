@@ -117,6 +117,9 @@ namespace GoblinSlayer
             {
                 this.Hide();
                 //This will contain the lose screen.
+                this.KeyPreview = false;
+                DeathScreen death = new DeathScreen();
+                death.Show();
             }
         }
 
@@ -125,8 +128,11 @@ namespace GoblinSlayer
             if (game.Map.enemiesArr.Length == 0)
             {
                 this.Hide();
-
                 //This will contain the win screen.
+                this.KeyPreview = false;
+                WinScreen win = new WinScreen();
+                win.Show();
+
             }
         }
 

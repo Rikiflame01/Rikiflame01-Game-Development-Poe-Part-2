@@ -15,3 +15,5 @@ C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed 
 C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.pdb
 C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.genruntimeconfig.cache
 C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\ref\GoblinSlayer.dll
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.DeathScreen.resources
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.WinScreen.resources
