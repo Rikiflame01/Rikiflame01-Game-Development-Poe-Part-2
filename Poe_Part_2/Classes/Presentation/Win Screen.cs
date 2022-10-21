@@ -26,5 +26,15 @@ namespace GoblinSlayer
         {
 
         }
+
+        private void diedRestartButton_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void diedExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
