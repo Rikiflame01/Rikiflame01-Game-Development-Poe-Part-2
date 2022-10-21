@@ -42,8 +42,12 @@
             this.interactionMsgs = new System.Windows.Forms.Label();
             this.ItemMessages = new System.Windows.Forms.Label();
             this.Background = new System.Windows.Forms.GroupBox();
+            this.normalSize = new System.Windows.Forms.Button();
+            this.ExitGame = new System.Windows.Forms.Button();
+            this.minimize = new System.Windows.Forms.Button();
             this.ShopContainer = new System.Windows.Forms.GroupBox();
             this.Shop_Item_1 = new System.Windows.Forms.Button();
+            this.Maximize = new System.Windows.Forms.Button();
             this.ItemContainer = new System.Windows.Forms.GroupBox();
             this.itemSelected = new System.Windows.Forms.Label();
             this.itemListContainer = new System.Windows.Forms.GroupBox();
@@ -107,16 +111,18 @@
             // 
             // playerHelpContainer
             // 
+            this.playerHelpContainer.AutoSize = true;
             this.playerHelpContainer.BackColor = System.Drawing.Color.Black;
             this.playerHelpContainer.Controls.Add(this.moveControls2);
             this.playerHelpContainer.Controls.Add(this.moveControls);
+            this.playerHelpContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.playerHelpContainer.Font = new System.Drawing.Font("Curlz MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.playerHelpContainer.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.playerHelpContainer.Location = new System.Drawing.Point(38, 714);
+            this.playerHelpContainer.Location = new System.Drawing.Point(0, 707);
             this.playerHelpContainer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.playerHelpContainer.Name = "playerHelpContainer";
             this.playerHelpContainer.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.playerHelpContainer.Size = new System.Drawing.Size(899, 143);
+            this.playerHelpContainer.Size = new System.Drawing.Size(1615, 162);
             this.playerHelpContainer.TabIndex = 3;
             this.playerHelpContainer.TabStop = false;
             this.playerHelpContainer.Text = "Player Controls";
@@ -172,7 +178,7 @@
             this.enemyListContainer.Controls.Add(this.viewEnemies);
             this.enemyListContainer.Font = new System.Drawing.Font("Curlz MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.enemyListContainer.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.enemyListContainer.Location = new System.Drawing.Point(1045, 193);
+            this.enemyListContainer.Location = new System.Drawing.Point(1047, 276);
             this.enemyListContainer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.enemyListContainer.Name = "enemyListContainer";
             this.enemyListContainer.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -200,7 +206,7 @@
             this.scoutedEnemyContainer.Controls.Add(this.enemySelected);
             this.scoutedEnemyContainer.Font = new System.Drawing.Font("Curlz MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.scoutedEnemyContainer.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.scoutedEnemyContainer.Location = new System.Drawing.Point(1045, 306);
+            this.scoutedEnemyContainer.Location = new System.Drawing.Point(1047, 389);
             this.scoutedEnemyContainer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.scoutedEnemyContainer.Name = "scoutedEnemyContainer";
             this.scoutedEnemyContainer.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -216,7 +222,7 @@
             this.notificationsContainer.Controls.Add(this.ItemMessages);
             this.notificationsContainer.Font = new System.Drawing.Font("Curlz MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.notificationsContainer.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.notificationsContainer.Location = new System.Drawing.Point(1046, 22);
+            this.notificationsContainer.Location = new System.Drawing.Point(1048, 105);
             this.notificationsContainer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.notificationsContainer.Name = "notificationsContainer";
             this.notificationsContainer.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -256,7 +262,11 @@
             // 
             this.Background.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Background.BackColor = System.Drawing.Color.Black;
+            this.Background.Controls.Add(this.normalSize);
+            this.Background.Controls.Add(this.ExitGame);
+            this.Background.Controls.Add(this.minimize);
             this.Background.Controls.Add(this.ShopContainer);
+            this.Background.Controls.Add(this.Maximize);
             this.Background.Controls.Add(this.dungeonMap);
             this.Background.Controls.Add(this.ItemContainer);
             this.Background.Controls.Add(this.scoutedEnemyContainer);
@@ -265,14 +275,62 @@
             this.Background.Controls.Add(this.enemyListContainer);
             this.Background.Controls.Add(this.statsContainer);
             this.Background.Cursor = System.Windows.Forms.Cursors.NoMove2D;
-            this.Background.Location = new System.Drawing.Point(-7, 2);
+            this.Background.Location = new System.Drawing.Point(-7, -18);
             this.Background.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Background.Name = "Background";
             this.Background.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Background.Size = new System.Drawing.Size(1623, 699);
+            this.Background.Size = new System.Drawing.Size(1623, 719);
             this.Background.TabIndex = 9;
             this.Background.TabStop = false;
             this.Background.Enter += new System.EventHandler(this.Box_Enter);
+            // 
+            // normalSize
+            // 
+            this.normalSize.BackColor = System.Drawing.Color.White;
+            this.normalSize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.normalSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.normalSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.normalSize.ForeColor = System.Drawing.Color.Black;
+            this.normalSize.Location = new System.Drawing.Point(1352, 53);
+            this.normalSize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.normalSize.Name = "normalSize";
+            this.normalSize.Size = new System.Drawing.Size(76, 34);
+            this.normalSize.TabIndex = 26;
+            this.normalSize.Text = "NORMAL";
+            this.normalSize.UseVisualStyleBackColor = false;
+            this.normalSize.Click += new System.EventHandler(this.normalSize_Click);
+            // 
+            // ExitGame
+            // 
+            this.ExitGame.BackColor = System.Drawing.Color.White;
+            this.ExitGame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ExitGame.ForeColor = System.Drawing.Color.Black;
+            this.ExitGame.Location = new System.Drawing.Point(1491, 53);
+            this.ExitGame.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ExitGame.Name = "ExitGame";
+            this.ExitGame.Size = new System.Drawing.Size(82, 34);
+            this.ExitGame.TabIndex = 25;
+            this.ExitGame.Text = "CLOSE";
+            this.ExitGame.UseVisualStyleBackColor = false;
+            this.ExitGame.Click += new System.EventHandler(this.ExitGame_Click);
+            // 
+            // minimize
+            // 
+            this.minimize.BackColor = System.Drawing.Color.White;
+            this.minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.minimize.ForeColor = System.Drawing.Color.Black;
+            this.minimize.Location = new System.Drawing.Point(1295, 53);
+            this.minimize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.minimize.Name = "minimize";
+            this.minimize.Size = new System.Drawing.Size(51, 34);
+            this.minimize.TabIndex = 24;
+            this.minimize.Text = "MIN";
+            this.minimize.UseVisualStyleBackColor = false;
+            this.minimize.Click += new System.EventHandler(this.minimize_Click);
             // 
             // ShopContainer
             // 
@@ -281,7 +339,7 @@
             this.ShopContainer.Controls.Add(this.Shop_Item_1);
             this.ShopContainer.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ShopContainer.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.ShopContainer.Location = new System.Drawing.Point(15, 404);
+            this.ShopContainer.Location = new System.Drawing.Point(15, 414);
             this.ShopContainer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ShopContainer.Name = "ShopContainer";
             this.ShopContainer.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -306,6 +364,22 @@
             this.Shop_Item_1.UseVisualStyleBackColor = false;
             this.Shop_Item_1.Click += new System.EventHandler(this.itemOneButton_Click);
             // 
+            // Maximize
+            // 
+            this.Maximize.BackColor = System.Drawing.Color.White;
+            this.Maximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Maximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Maximize.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Maximize.ForeColor = System.Drawing.Color.Black;
+            this.Maximize.Location = new System.Drawing.Point(1434, 53);
+            this.Maximize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Maximize.Name = "Maximize";
+            this.Maximize.Size = new System.Drawing.Size(51, 34);
+            this.Maximize.TabIndex = 23;
+            this.Maximize.Text = "MAX";
+            this.Maximize.UseVisualStyleBackColor = false;
+            this.Maximize.Click += new System.EventHandler(this.Maximize_Click);
+            // 
             // ItemContainer
             // 
             this.ItemContainer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -313,7 +387,7 @@
             this.ItemContainer.Controls.Add(this.itemSelected);
             this.ItemContainer.Font = new System.Drawing.Font("Curlz MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ItemContainer.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.ItemContainer.Location = new System.Drawing.Point(1045, 429);
+            this.ItemContainer.Location = new System.Drawing.Point(1047, 512);
             this.ItemContainer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ItemContainer.Name = "ItemContainer";
             this.ItemContainer.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -342,7 +416,7 @@
             this.itemListContainer.Controls.Add(this.viewItems);
             this.itemListContainer.Font = new System.Drawing.Font("Curlz MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.itemListContainer.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.itemListContainer.Location = new System.Drawing.Point(1045, 522);
+            this.itemListContainer.Location = new System.Drawing.Point(1047, 605);
             this.itemListContainer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.itemListContainer.Name = "itemListContainer";
             this.itemListContainer.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -372,15 +446,16 @@
             // 
             // saveButton
             // 
-            this.saveButton.BackColor = System.Drawing.Color.Silver;
+            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.saveButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.saveButton.ForeColor = System.Drawing.Color.ForestGreen;
-            this.saveButton.Location = new System.Drawing.Point(1339, 777);
+            this.saveButton.Location = new System.Drawing.Point(1345, 777);
             this.saveButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(117, 65);
+            this.saveButton.Size = new System.Drawing.Size(120, 65);
             this.saveButton.TabIndex = 14;
             this.saveButton.Text = "SAVE";
             this.saveButton.UseVisualStyleBackColor = false;
@@ -396,12 +471,13 @@
             // 
             // LoadButton
             // 
-            this.LoadButton.BackColor = System.Drawing.Color.Silver;
+            this.LoadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.LoadButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.LoadButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LoadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LoadButton.ForeColor = System.Drawing.Color.Firebrick;
-            this.LoadButton.Location = new System.Drawing.Point(1486, 777);
+            this.LoadButton.Location = new System.Drawing.Point(1484, 777);
             this.LoadButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.LoadButton.Name = "LoadButton";
             this.LoadButton.Size = new System.Drawing.Size(120, 65);
@@ -412,8 +488,7 @@
             // 
             // GameUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1615, 869);
@@ -424,7 +499,7 @@
             this.Controls.Add(this.playerHelpContainer);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "GameUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -447,6 +522,7 @@
             this.ItemContainer.PerformLayout();
             this.itemListContainer.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -475,5 +551,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button LoadButton;
         private System.Windows.Forms.Label moveControls2;
+        private Button ExitGame;
+        private Button minimize;
+        private Button Maximize;
+        private Button normalSize;
     }
 }

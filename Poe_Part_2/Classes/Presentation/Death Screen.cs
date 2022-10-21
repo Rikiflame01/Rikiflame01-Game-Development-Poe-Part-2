@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace GoblinSlayer
 {
+    [Serializable]
     public partial class DeathScreen : Form
     {
         public DeathScreen()
