@@ -1,0 +1,16 @@
+﻿using System;
+
+namespace GoblinSlayer.Classes.Tiles
+{
+    [Serializable]
+    abstract class Item : Tile
+    {
+
+        public Item(int x, int y, char symbol) : base(x, y, symbol)
+        {
+
+        }
+
+        public abstract override string ToString();
+    }
+}

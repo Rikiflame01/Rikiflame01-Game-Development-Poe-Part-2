@@ -1,0 +1,17 @@
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.csproj.AssemblyReference.cache
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.GameUI.resources
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.csproj.GenerateResource.cache
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.AssemblyInfoInputs.cache
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.AssemblyInfo.cs
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.csproj.CoreCompileInputs.cache
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\bin\Debug\net6.0-windows\GoblinSlayer.exe
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\bin\Debug\net6.0-windows\GoblinSlayer.deps.json
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\bin\Debug\net6.0-windows\GoblinSlayer.runtimeconfig.json
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\bin\Debug\net6.0-windows\GoblinSlayer.dll
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\bin\Debug\net6.0-windows\GoblinSlayer.pdb
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.dll
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\refint\GoblinSlayer.dll
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.pdb
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\GoblinSlayer.genruntimeconfig.cache
+C:\Users\Damian\Documents\Vega-University\Game-Dev-and-Design-S2\GADE\POE\Fixed part 2\Poe_Part_2\Poe_Part_2\obj\Debug\net6.0-windows\ref\GoblinSlayer.dll
